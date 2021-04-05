@@ -1,0 +1,12 @@
+{
+	"name": "ft_atoi",
+	"return_value": "int",
+	"dependencies": ["stdlib.h"],
+	"parameters": [
+		{"char*": "src"},
+		{"char*": "dest"},
+		{"char*": "dest2"}
+	],
+	"commands": [],
+	"input": [{"src": "-2394"}, {"dest": "999"}, {"dest2": "00"}]
+}

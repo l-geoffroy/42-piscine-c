@@ -1,0 +1,18 @@
+NAME = ft_display_file
+SRCS = display_file.c
+OBJS = ${SRC:.c=.o}
+FLAGS = -Wall -Werror -Wextra
+CC = gcc
+
+all:	${NAME}
+
+${NAME}: ${OBJS}
+	${CC} -o ${NAME} ${SRCS} ${FLAGS}
+
+clean:
+	rm -f ${OBJS}
+
+fclean: clean
+	rm -f ${NAME}
+
+.PHONY: all clean fclean
